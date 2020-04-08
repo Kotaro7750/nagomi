@@ -38,22 +38,10 @@ function! nagomi#palette#dark#create() abort
   let g.red_tint_fg    = pgmnt#color#mix(g.red, g.normal_fg, 0.30)
 
   " linenr
-  let g.linenr_bg = pgmnt#color#adjust_color(
-        \ g.normal_bg, {
-        \   'saturation': +0.05,
-        \   'lightness': +0.05,
-        \ })
-  let g.linenr_fg = pgmnt#color#lighten(g.linenr_bg, 0.20)
-  let g.cursorlinenr_bg = pgmnt#color#adjust_color(
-        \ g.linenr_bg, {
-        \   'saturation': +0.10,
-        \   'lightness': +0.10,
-        \ })
-  let g.cursorlinenr_fg = pgmnt#color#adjust_color(
-        \ g.linenr_fg, {
-        \   'saturation': +0.10, 
-        \   'lightness': +0.50,
-        \ })
+  let g.linenr_bg = '#281a14' "鉄黒
+  let g.linenr_fg = '#595857' "炭色
+  let g.cursorlinenr_bg = g.linenr_fg
+  let g.cursorlinenr_fg = '#c0c6c9' "灰青
 
   " diff
   let g.difftext_bg = pgmnt#color#mix(g.lblue, g.normal_bg, 0.6)
@@ -65,10 +53,10 @@ function! nagomi#palette#dark#create() abort
   let g.statusline_error = '#ea5506' "金赤
 
   " pmenu
-  let g.pmenu_bg = pgmnt#color#hsl(hue_base, 0.20, 0.30)
+  let g.pmenu_bg = '#475950' "革色
   let g.pmenu_fg = g.normal_fg
-  let g.pmenusel_bg = pgmnt#color#hsl(hue_base, 0.20, 0.45)
-  let g.pmenusel_fg = pgmnt#color#hsl(hue_base, 0.20, 0.95)
+  let g.pmenusel_bg = '#38b48b' "翡翠色
+  let g.pmenusel_fg = g.normal_bg
 
   " misc
   let g.comment_fg = '#4d4398' "紅桔梗
