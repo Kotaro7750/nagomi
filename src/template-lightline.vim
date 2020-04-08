@@ -11,18 +11,18 @@ function! s:build_palette() abort
         \ 'visual':   {},
         \ 'tabline':  {}}
 
-  let col_base     = ['#383c3c', '#2e2930', 238, 233]
-  let col_edge     = ['#383c3c', '#9ea1a3', 234, 245]
-  let col_gradient = ['#afafb0', '#2b2b2b', 252, 236]
-  let col_nc       = ['#383c3c', '#2e2930', 238, 233]
-  let col_tabfill  = ['#9ea1a3', '#383c3c', 245, 234]
-  let col_normal   = ['#16160e', '#5a79ba', 234, 203]
-  let col_error    = ['#16160e', '#ea5506', 234, 203]
-  let col_warning  = ['#16160e', '#ee7800', 234, 216]
-  let col_insert   = ['#16160e', '#3eb370', 234, 150]
-  let col_replace  = ['#16160e', '#f8b500', 234, 216]
-  let col_visual   = ['#16160e', '#ee7800', 234, 216]
-  let col_tabsel   = ['#383c3c', '#9ea1a3', 234, 245]
+  let col_base     = {{col_base}}
+  let col_edge     = {{col_edge}}
+  let col_gradient = {{col_gradient}}
+  let col_nc       = {{col_nc}}
+  let col_tabfill  = {{col_tabfill}}
+  let col_normal   = {{col_normal}}
+  let col_error    = {{col_error}}
+  let col_warning  = {{col_warning}}
+  let col_insert   = {{col_insert}}
+  let col_replace  = {{col_replace}}
+  let col_visual   = {{col_visual}}
+  let col_tabsel   = {{col_tabsel}}
 
   let p.normal.middle = [
         \ col_base]
